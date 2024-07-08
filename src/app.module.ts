@@ -70,7 +70,6 @@ const decorators = [
       { name: PostLikes.name, schema: PostLikesSchema },
       { name: SessionDb.name, schema: SessionSchema },
     ]),
-
     JwtModule.register({
       global: true,
       secret: process.env.JWT_SECRET,
