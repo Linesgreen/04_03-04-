@@ -92,6 +92,7 @@ const decorators = [
     CommentsController,
     SecurityController,
   ],
+
   providers: [
     ...blogsProviders,
     ...postProviders,
