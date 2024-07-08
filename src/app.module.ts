@@ -82,6 +82,7 @@ const decorators = [
       },
     ]),
   ],
+
   controllers: [
     BlogsController,
     PostsController,
