@@ -1,5 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { HydratedDocument } from 'mongoose';
+import {HydratedDocument,} from 'mongoose';
 
 import { BlogCreateModel } from '../types/input';
 import { OutputBlogType } from '../types/output';
@@ -34,7 +34,7 @@ export class Blog {
     this.createdAt = new Date().toISOString();
     this.isMembership = false;
   }
-
+  //TODO протекед сделать
   toDto(): OutputBlogType {
     return {
       // eslint-disable-next-line no-underscore-dangle

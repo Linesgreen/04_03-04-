@@ -15,6 +15,7 @@ export class UserRepository {
    * @param newUser : UsersDocument
    */
   async addUser(newUser: User): Promise<UsersDocument> {
+    //не лезь в это дерьмо
     const newUserToDb = new this.UserModel(newUser);
     await newUserToDb.save();
     return newUserToDb;
